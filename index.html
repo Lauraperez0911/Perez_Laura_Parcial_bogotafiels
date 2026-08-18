@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -55,6 +56,10 @@
             height: 500px;
             background: #ffffff;
             border-radius: 20px;
+        }
+
+        .content {
+            padding: 20px;
         }
 
         .brand {
@@ -135,7 +140,8 @@
 
         .qr {
             width: 220px;
-            max-width: 80%;
+            height: 220px;
+            object-fit: contain;
             border-radius: 15px;
         }
 
@@ -148,6 +154,10 @@
 
         footer strong {
             font-size: 20px;
+        }
+
+        footer p {
+            margin-top: 10px;
         }
 
         @media (max-width: 800px) {
@@ -174,13 +184,14 @@
 
 <body>
 
+    <!-- HERO -->
     <section class="hero">
 
         <div class="container">
 
+            <!-- MODELO 3D -->
             <div class="image-box">
 
-                <!-- MODELO 3D DEL TENIS -->
                 <model-viewer
                     src="tennis.glb"
                     alt="Tenis Reebok en 3D"
@@ -195,6 +206,7 @@
 
             </div>
 
+            <!-- INFORMACIÓN -->
             <div class="content">
 
                 <div class="brand">
@@ -212,31 +224,39 @@
                     de BogotaFitDeals.
                 </p>
 
+                <!-- EXPERIENCIA RA -->
                 <a
                     class="cta ar"
                     href="https://mywebar.com/p/Project_1_cvy8t3nlgz"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer">
                     📱 VER EN REALIDAD AUMENTADA
                 </a>
 
+                <!-- AMAZON -->
                 <a
                     class="cta amazon"
                     href="https://www.amazon.com/dp/B0G5BZKZWX?pd_rd_i=B0G5BZKZWX&pf_rd_p=f1e9beb5-f371-4587-80fb-3d96ad74443b&pf_rd_r=M8X4D4NNEWECVS11EKSQ&pd_rd_wg=8aAhr&pd_rd_w=nkotK&pd_rd_r=f970519f-e19e-414f-a199-38a75ae534d7&th=1&psc=1"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer">
                     🛒 COMPRAR EN AMAZON
                 </a>
 
+                <!-- WHATSAPP -->
                 <a
-                      class="cta whatsapp"
-    href="https://wa.me/573104982451?text=Hola%20BogotaFitDeals%2C%20quiero%20recibir%20recomendaciones%20sobre%20los%20tenis."
-    target="_blank">
-    💬 RECOMENDACIONES POR WHATSAPP
+                    class="cta whatsapp"
+                    href="https://wa.me/573104982451?text=Hola%20BogotaFitDeals%2C%20quiero%20recibir%20recomendaciones%20sobre%20los%20tenis."
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    💬 RECOMENDACIONES POR WHATSAPP
                 </a>
 
+                <!-- INSTAGRAM -->
                 <a
                     class="cta instagram"
                     href="https://www.instagram.com/bogotafitdeals/"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer">
                     📸 SÍGUENOS EN REDES SOCIALES
                 </a>
 
@@ -246,6 +266,8 @@
 
     </section>
 
+
+    <!-- QR -->
     <section class="qr-section">
 
         <h2>
@@ -257,14 +279,16 @@
             de Realidad Aumentada.
         </p>
 
-        <!-- QR DE LA EXPERIENCIA -->
+        <!-- QR DE MYWEBAR -->
         <img
             class="qr"
-            src="https://mywebar.com/qr/953290"
-            alt="Código QR de la experiencia RA">
+            src="qr.png"
+            alt="Código QR de la experiencia de Realidad Aumentada">
 
     </section>
 
+
+    <!-- FOOTER -->
     <footer>
 
         <strong>BOGOTAFITDEALS</strong>
@@ -278,3 +302,4 @@
 
 </body>
 </html>
+```
