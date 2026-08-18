@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BogotaFitDeals | Póntelos a prueba</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            color: #111;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #ffffff, #eaeaea);
+        }
+
+        .container {
+            max-width: 1100px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .image-box {
+            background: #ffffff;
+            border-radius: 25px;
+            padding: 30px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+            text-align: center;
+        }
+
+        .image-box img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .brand {
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 58px;
+            line-height: 0.95;
+            margin-bottom: 25px;
+        }
+
+        h1 span {
+            display: block;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            color: #444;
+        }
+
+        .cta {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 17px 25px;
+            margin-bottom: 14px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .cta:hover {
+            transform: translateY(-3px);
+        }
+
+        .ar {
+            background: #111;
+            color: white;
+        }
+
+        .amazon {
+            background: #ffb300;
+            color: #111;
+        }
+
+        .whatsapp {
+            background: #25D366;
+            color: white;
+        }
+
+        .instagram {
+            background: #d62976;
+            color: white;
+        }
+
+        .qr-section {
+            text-align: center;
+            padding: 70px 20px;
+            background: white;
+        }
+
+        .qr-section h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .qr-section p {
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .qr {
+            width: 220px;
+            max-width: 80%;
+            border-radius: 15px;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer strong {
+            font-size: 20px;
+        }
+
+        @media (max-width: 800px) {
+
+            .container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            h1 {
+                font-size: 45px;
+            }
+
+            .content {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="image-box">
+
+                <!-- AQUÍ PONDREMOS LA IMAGEN DE LOS TENIS -->
+
+                <img 
+                    src="https://via.placeholder.com/600x600?text=REEBOK"
+                    alt="Tenis Reebok"
+                >
+
+            </div>
+
+            <div class="content">
+
+                <div class="brand">
+                    BOGOTAFITDEALS
+                </div>
+
+                <h1>
+                    <span>PÓNTELos</span>
+                    <span>A PRUEBA</span>
+                </h1>
+
+                <p class="subtitle">
+                    Explora el producto en realidad aumentada
+                    y descubre una recomendación especial
+                    de BogotaFitDeals.
+                </p>
+
+                <a 
+                    class="cta ar"
+                    href="https://mywebar.com/p/Project_1_cvy8t3nlgz"
+                    target="_blank"
+                >
+                    📱 VER EN REALIDAD AUMENTADA
+                </a>
+
+                <a 
+                    class="cta amazon"
+                    href="https://www.amazon.com/dp/B0G5BZKZWX?pd_rd_i=B0G5BZKZWX&pf_rd_p=f1e9beb5-f371-4587-80fb-3d96ad74443b&pf_rd_r=M8X4D4NNEWECVS11EKSQ&pd_rd_wg=8aAhr&pd_rd_w=nkotK&pd_rd_r=f970519f-e19e-414f-a199-38a75ae534d7&th=1&psc=1"
+                    target="_blank"
+                >
+                    🛒 COMPRAR EN AMAZON
+                </a>
+
+                <a 
+                    class="cta whatsapp"
+                    href="#"
+                    target="_blank"
+                >
+                    💬 RECOMENDACIONES POR WHATSAPP
+                </a>
+
+                <a 
+                    class="cta instagram"
+                    href="#"
+                    target="_blank"
+                >
+                    📸 SÍGUENOS EN REDES SOCIALES
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="qr-section">
+
+        <h2>
+            ¿Listo para probarlos?
+        </h2>
+
+        <p>
+            Escanea el código y vive la experiencia
+            de Realidad Aumentada.
+        </p>
+
+        <!-- AQUÍ PONDREMOS TU QR -->
+
+        <img 
+            class="qr"
+            src="https://via.placeholder.com/220x220?text=QR"
+            alt="Código QR de la experiencia RA"
+        >
+
+    </section>
+
+
+    <footer>
+
+        <strong>BOGOTAFITDEALS</strong>
+
+        <p>
+            Póntelos a prueba.
+            Compra de una forma diferente.
+        </p>
+
+    </footer>
+
+</body>
+</html>
