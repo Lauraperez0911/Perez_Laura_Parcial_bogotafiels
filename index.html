@@ -6,6 +6,11 @@
 
     <title>BogotaFitDeals | Póntelos a prueba</title>
 
+    <!-- Visor de modelos 3D -->
+    <script type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+    </script>
+
     <style>
         * {
             box-sizing: border-box;
@@ -40,19 +45,16 @@
         .image-box {
             background: #ffffff;
             border-radius: 25px;
-            padding: 30px;
+            padding: 20px;
             box-shadow: 0 15px 40px rgba(0,0,0,0.12);
             text-align: center;
         }
 
-        .image-box img {
+        model-viewer {
             width: 100%;
-            max-width: 500px;
+            height: 500px;
+            background: #ffffff;
             border-radius: 20px;
-        }
-
-        .content {
-            padding: 20px;
         }
 
         .brand {
@@ -162,6 +164,10 @@
             .content {
                 text-align: center;
             }
+
+            model-viewer {
+                height: 380px;
+            }
         }
     </style>
 </head>
@@ -174,12 +180,18 @@
 
             <div class="image-box">
 
-                <!-- AQUÍ PONDREMOS LA IMAGEN DE LOS TENIS -->
-
-                <img 
-                    src="https://via.placeholder.com/600x600?text=REEBOK"
-                    alt="Tenis Reebok"
-                >
+                <!-- MODELO 3D DEL TENIS -->
+                <model-viewer
+                    src="tennis.glb"
+                    alt="Tenis Reebok en 3D"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1"
+                    exposure="1"
+                    environment-image="neutral"
+                    ar
+                    ar-modes="webxr scene-viewer quick-look">
+                </model-viewer>
 
             </div>
 
@@ -200,35 +212,31 @@
                     de BogotaFitDeals.
                 </p>
 
-                <a 
+                <a
                     class="cta ar"
                     href="https://mywebar.com/p/Project_1_cvy8t3nlgz"
-                    target="_blank"
-                >
+                    target="_blank">
                     📱 VER EN REALIDAD AUMENTADA
                 </a>
 
-                <a 
+                <a
                     class="cta amazon"
                     href="https://www.amazon.com/dp/B0G5BZKZWX?pd_rd_i=B0G5BZKZWX&pf_rd_p=f1e9beb5-f371-4587-80fb-3d96ad74443b&pf_rd_r=M8X4D4NNEWECVS11EKSQ&pd_rd_wg=8aAhr&pd_rd_w=nkotK&pd_rd_r=f970519f-e19e-414f-a199-38a75ae534d7&th=1&psc=1"
-                    target="_blank"
-                >
+                    target="_blank">
                     🛒 COMPRAR EN AMAZON
                 </a>
 
-                <a 
-                    class="cta whatsapp"
-                    href="#"
-                    target="_blank"
-                >
-                    💬 RECOMENDACIONES POR WHATSAPP
+                <a
+                      class="cta whatsapp"
+    href="https://wa.me/573104982451?text=Hola%20BogotaFitDeals%2C%20quiero%20recibir%20recomendaciones%20sobre%20los%20tenis."
+    target="_blank">
+    💬 RECOMENDACIONES POR WHATSAPP
                 </a>
 
-                <a 
+                <a
                     class="cta instagram"
-                    href="#"
-                    target="_blank"
-                >
+                    href="https://www.instagram.com/bogotafitdeals/"
+                    target="_blank">
                     📸 SÍGUENOS EN REDES SOCIALES
                 </a>
 
@@ -237,7 +245,6 @@
         </div>
 
     </section>
-
 
     <section class="qr-section">
 
@@ -250,16 +257,13 @@
             de Realidad Aumentada.
         </p>
 
-        <!-- AQUÍ PONDREMOS TU QR -->
-
-        <img 
+        <!-- QR DE LA EXPERIENCIA -->
+        <img
             class="qr"
-            src="https://via.placeholder.com/220x220?text=QR"
-            alt="Código QR de la experiencia RA"
-        >
+            src="https://mywebar.com/qr/953290"
+            alt="Código QR de la experiencia RA">
 
     </section>
-
 
     <footer>
 
